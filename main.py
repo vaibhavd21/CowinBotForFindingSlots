@@ -33,7 +33,11 @@ def get_required_data(response):
     #print()
     for center in response_json['centers']:
         for sessions in center["sessions"]:
-
+            if (sessions["available_capacity_dose1"] > 0 or sessions["available_capacity_dose2"] > 0) and sessions["min_age_limit"] == 18 and center['fee_type'] == "Free":
+                message = "Pincode : {} \nName : {}\nVaccine = {}, Dose 1 Capacity = {}\nDose 2 Capacity = {}\nNo Fees and for age {}+".format(center["pincode"],center["name"],sessions["vaccine"],sessions["available_capacity_dose1"],sessions["available_capacity_dose2"],sessions["min_age_limit"])
+                #print()
+                send_msg_telegram(message)
+            """
             if sessions["available_capacity_dose1"] > 0 and sessions["min_age_limit"] == 18 and center['fee_type'] == "Paid":
                 #fee = sessions['vaccine_fees'][0]['fee']
                 message = "Pincode : {} \nName : {}\nVaccine = {}, Doses Available = {}\nPaid and for age {}+".format(center["pincode"],center["name"],sessions["vaccine"],sessions["available_capacity_dose1"],sessions["min_age_limit"])
@@ -52,6 +56,7 @@ def get_required_data(response):
                     center["pincode"], center["name"], sessions["vaccine"], sessions["available_capacity_dose1"])
                 print()
                 send_msg_telegram(message)
+                """
 
 
 def send_msg_telegram(message):
@@ -62,6 +67,8 @@ def send_msg_telegram(message):
 
 
 if __name__ == '__main__':
-    fetch_data_from_url(pune_district_id)
+    while True:
+        fetch_data_from_url(pune_district_id)
+        time.sleep(600)
 
 

@@ -29,7 +29,7 @@ def fetch_data_from_url(pune_district_id):
 
 def get_required_data(response):
     response_json = response.json()
-    print(response_json['centers'])
+    #print(response_json['centers'])
     #print()
     for center in response_json['centers']:
         for sessions in center["sessions"]:

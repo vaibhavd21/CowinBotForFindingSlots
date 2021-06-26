@@ -1,17 +1,64 @@
-brotlipy==0.7.0
-certifi==2020.12.5
-cffi @ file:///C:/ci/cffi_1613247279197/work
-chardet @ file:///C:/ci/chardet_1607690654534/work
-cryptography @ file:///C:/ci/cryptography_1616769344312/work
-DateTime==4.3
-idna @ file:///home/linux1/recipes/ci/idna_1610986105248/work
-pycparser @ file:///tmp/build/80754af9/pycparser_1594388511720/work
-pyOpenSSL @ file:///tmp/build/80754af9/pyopenssl_1608057966937/work
-PySocks @ file:///C:/ci/pysocks_1605287845585/work
-pytz==2021.1
-requests @ file:///tmp/build/80754af9/requests_1608241421344/work
-six @ file:///C:/ci/six_1605187374963/work
-urllib3 @ file:///tmp/build/80754af9/urllib3_1615837158687/work
-win-inet-pton @ file:///C:/ci/win_inet_pton_1605306167264/work
-wincertstore==0.2
-zope.interface==5.4.0
+appdirs==1.4.4
+asgiref==3.3.4
+attrs==19.3.0
+backcall==0.2.0
+bleach==3.1.5
+click==7.1.2
+colorama==0.4.3
+decorator==4.4.2
+defusedxml==0.6.0
+distlib==0.3.1
+Django==3.2.3
+entrypoints==0.3
+filelock==3.0.12
+Flask==1.1.2
+gunicorn==20.1.0
+ipykernel==5.3.2
+ipython==7.16.1
+ipython-genutils==0.2.0
+itsdangerous==1.1.0
+jedi==0.17.1
+Jinja2==2.11.2
+joblib==1.0.1
+jsonify==0.5
+jsonschema==3.2.0
+jupyter-client==6.1.5
+jupyter-core==4.6.3
+MarkupSafe==1.1.1
+mistune==0.8.4
+nbconvert==5.6.1
+nbformat==5.0.7
+notebook==6.0.3
+numpy==1.19.4
+packaging==20.4
+pandocfilters==1.4.2
+parso==0.7.0
+pickleshare==0.7.5
+Pillow==8.2.0
+prometheus-client==0.8.0
+prompt-toolkit==3.0.5
+Pygments==2.6.1
+pyparsing==2.4.7
+pypiwin32==223
+pyrsistent==0.16.0
+python-dateutil==2.8.1
+pytz==2020.5
+pywinpty==0.5.7
+pyzmq==19.0.1
+scikit-learn==0.24.1
+scipy==1.6.1
+Send2Trash==1.5.0
+six==1.15.0
+sklearn==0.0
+sqlparse==0.4.1
+terminado==0.8.3
+testpath==0.4.4
+threadpoolctl==2.1.0
+tornado==6.0.4
+traitlets==4.3.3
+virtualenv==20.0.26
+virtualenvwrapper-win==1.2.6
+wcwidth==0.2.5
+webencodings==0.5.1
+Werkzeug==1.0.1
+whitenoise==5.2.0
